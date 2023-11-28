@@ -9,8 +9,6 @@ import { HttpClient } from '@angular/common/http';
 export class JobListingServiceService {
   apiUrl = 'http://localhost:5000/Jobs';
 
-  http:HttpClient = inject(HttpClient)
-
   constructor() { }
 
   // Function to fetch data from the endpoint
