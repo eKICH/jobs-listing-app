@@ -1,0 +1,20 @@
+<section>
+    <div class="container mb-2">
+        <div class="card">
+            <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <a [routerLink]="['/job-details', job.id, job.jobTitle]" class="card-title link-primary fs-5" style="text-decoration:none">{{job.jobTitle}}</a>
+                            <p class="card-sub-title fs-6">{{job.jobType}}, <b>{{job.city}}, {{job.country}}</b></p>
+                        </div>
+                        <div>
+                            <section>{{job.datePosted}}</section>
+                        </div>
+                    </div>
+                    <article>
+                        <p class="card-text" style="margin-top: -10px;">{{job.brief}}</p>
+                    </article>
+            </div>
+        </div>
+    </div>
+</section>

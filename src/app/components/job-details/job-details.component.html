@@ -1,0 +1,26 @@
+<section class="bg-secondary text-light p-5 text-center">
+    <div class="container">
+        <div class="d-flex justify-content-center align-items-center">
+            <div>
+                <h5 class="font-weight-light">{{job?.company}} | {{job?.jobType}}</h5>
+                <h3>{{job?.jobTitle}}</h3>
+                <h6>{{job?.city}}, {{job?.country}} | Posted on {{job?.datePosted}}</h6>
+            </div>
+        </div>
+    </div>    
+</section>
+
+<section class="container">
+    <h4 class="mt-4">Job Description</h4>
+    <p>Position Description:</p>
+    <article>
+        {{job?.description}}
+    </article>
+
+    <p class="mt-4">Requirements</p>
+    <ul>
+        <li>{{job?.requirements}}</li>
+        <li>{{job?.experience}} years of experience</li>
+    </ul>
+</section>
+
